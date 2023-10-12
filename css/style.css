@@ -1,0 +1,254 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.6%; 
+    letter-spacing: 0.75px;
+    color: #153461;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    padding: 23px 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #99BAED;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150.6%;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+button::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 20px;
+    background: rgba(153, 186, 237, 0.50);
+    filter: blur(25px);
+}   
+button:hover{
+    opacity: 0.8;
+ }
+h1{
+    color: #163561;
+    font-family: Catamaran;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 133.6%;
+    margin: 0;
+}
+h1 span{
+    color: #FBB400;
+}
+.container{
+    max-width: 1580px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__menu-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    position: relative;
+}
+.header.logo__part-two{
+    position: absolute;
+    top: 62px;
+    right: -60px;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 48px;
+    margin-left: 160px;
+}
+.header__nav-item a{
+    color: #163561;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 97px 14px 8px;
+}
+.header__nav-item a:hover{
+    background: #A3C1EF;
+    color: #fff;
+    border-radius: 5px;
+}
+.header__menu-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 72px;
+}
+.header__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 49px;
+}
+.header__content-text{
+    min-width: 600px;    
+}
+.header__content-text p{
+    margin: 29px 0 97px;
+}
+.history__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 226px;
+}
+.history__inner-text{
+    min-width: 546px; 
+    margin-left: 149px;
+}
+.history-text{
+    margin: 80px 0 110px;
+}
+.service{
+    margin: 136px 0 272px;
+    text-align: center;
+}
+.service__tipes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0 49px;
+    margin-top: 83px;
+}
+.service__tipes-item{
+    text-align: center;
+    border-radius: 29px;
+    background: #FAFBFF;
+    box-shadow: 0px 5px 0px 0px #99BAED;
+    padding: 0 43px;
+}
+.service__tipes-item:hover{
+    background-color: #99BAED;
+    color: #fff;
+    cursor: pointer;
+}
+.service__tipes-item img{
+    border-radius: 13px;
+    background: #E5ECFE;
+    box-shadow: 0px 1px 0px 0px #008FDD;
+    margin: 50px 0 59px;
+}
+.service__tipes-item-img1{
+    padding: 30px 23px;
+}
+.service__tipes-item-img2{
+    padding: 15px 3px;
+}
+.service__tipes-item-img3{
+    padding: 30px 19px;
+}
+.service__tipes-item h3{
+    color: #163561;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 116.6%; 
+    letter-spacing: 1.35px;
+}
+.service__tipes-item h3:hover{
+    color: #fff;
+}
+.service__tipes-item p{
+    margin: 60px 0 72px;
+    max-width: 360px;
+}
+.service__tipes-item:hover{
+    background-color: #99BAED;
+}
+.gallery{
+    text-align: center;
+}
+.gallery__content-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 110px 0 77px;
+    gap: 37px;
+}
+.gallery-img{
+    position: relative;
+    z-index: 1;
+    width: 435px;
+    height: 435px;
+}
+.gallery-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-image: url(/Barber-landing-Figma-Adaptive/images/img-bg.png);
+}   
+footer{
+    margin-top: 210px;
+    text-align: center;
+}
+.footer__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__logo{
+    position: relative;
+    margin-bottom: 26px;
+}
+.footer.logo__part-two{
+    position: absolute;
+    right: -95px;
+    top: 93px;
+}
+footer p{
+    width: 526px;
+    color: #153461;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 46px 0;
+    gap: 0 45px;
+}
+footer{
+    text-align: center;
+}
+.social-media-img:hover{
+   opacity: 0.8;
+   cursor: pointer;
+}
+
